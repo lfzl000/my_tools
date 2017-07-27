@@ -55,23 +55,25 @@ public class ProcessTools
     /// <summary>
     /// 列出已开启的应用
     /// </summary>
-    public static void ListAllAppliction()
+    public static String[] ListAllAppliction()
     {
         Process[] processes = Process.GetProcesses();
-        int i = 0;
+        List<string> allProcess = new List<string>();
         foreach (Process process in processes)
         {
             try
             {
                 if (!process.HasExited)
                 {
-                    UnityEngine.Debug.Log("应用ID:" + process.Id + "应用名:" + process.ProcessName);
+                    //UnityEngine.Debug.Log("应用ID:" + process.Id + "应用名:" + process.ProcessName);
+                    allProcess.Add(process.ProcessName);
                 }
             }
             catch (Exception ep)
             {
             }
         }
+        return allProcess.ToArray();
     }
     /// <summary>
     /// 杀死进程
