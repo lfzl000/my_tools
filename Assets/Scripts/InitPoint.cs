@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitPoint
+public class InitRoot
 {
     /// <summary>
-    /// 初始化路点
+    /// 初始化根
     /// </summary>
-    /// <param name="parent">路点根</param>
-    /// <returns>路点数组</returns>
-    public static Transform[] InitPatrolTargetPos(Transform parent)
+    /// <param name="parent">根</param>
+    /// <returns>数组</returns>
+    public static Transform[] InitTarget(Transform parent)
     {
         Transform[] children;
         if (parent != null && parent.childCount > 0)
