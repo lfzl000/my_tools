@@ -27,3 +27,4 @@
 - **TimerTool** : 计时器工具类，很方便好用的计时器
 - **TimerTrigger** : 链式计时器工具，功能齐全,调用非常方便. 来源[http://www.manew.com/thread-139640-1-1.html](http://www.manew.com/thread-139640-1-1.html)
 - **CutAudioClipNullEditor** : 切除音频文件首尾空白音编辑器工具，使用方法，选中要切除的音效（可多选），点击工具栏 Tools-AudioClip Cut Null即可，会生成一个新的音频文件
+- **KeyValueList** : 哈希工具类，代替原生的字典Dictionary，使用更加方便
